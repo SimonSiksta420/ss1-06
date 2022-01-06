@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+    apache2:
+        image: nginx:latest
+        ports:
+             - 80:80
+        volumes:
+             - ./www:/usr/share/nginx/html
